@@ -1,7 +1,8 @@
 <script>
 var app = getParams(document.location.search).app;
 window.open('appstream://' + app);
-window.close();
+
+setTimeout(function(){ window.close() }, 500);
 
 function getParams(qs) {
   qs = qs.split('+').join(' ');
